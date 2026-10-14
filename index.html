@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PageTurner | Online Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">PageTurner<span>.</span></a>
+    <nav><a href="#books">Books</a><a href="#cart">My Cart <span id="cart-count">0</span></a></nav>
+  </header>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+      <h1>Find a book.<br><em>Find a new world.</em></h1>
+      <p>Discover stories, ideas, and inspiration picked for curious minds.</p>
+      <a class="primary-link" href="#books">Explore books ↓</a>
+    </div>
+    <div class="hero-art" aria-label="Decorative stack of books">
+      <div class="sun"></div><div class="book book-one">READ<br>MORE</div>
+      <div class="book book-two">STORIES<br>THAT STAY</div><div class="book book-three">OPEN<br>A WORLD</div>
+    </div>
+  </section>
+  <main>
+    <section id="books" class="section">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Books to explore</h2></div>
+        <input id="search" type="search" placeholder="Search title or author..." aria-label="Search books">
+      </div>
+      <div id="book-list" class="book-grid"><p>Loading books...</p></div>
+    </section>
+    <section id="cart" class="section cart-section">
+      <div class="section-heading"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>Your shopping cart</h2></div></div>
+      <div id="cart-content" class="cart-content"><p>Your cart is empty.</p></div>
+      <div class="cart-footer"><strong id="cart-total">Total: ₹0.00</strong><button id="checkout" class="primary-button">Place order</button></div>
+    </section>
+  </main>
+  <footer><span>PageTurner Bookstore</span><span>Made for readers, one page at a time.</span></footer>
+  <div id="toast" role="status" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
